@@ -13,5 +13,5 @@ class Hello extends React.Component{
 
 ReactDOM.render(
     <Hello />,
-    document.querySelector('#root')
+    document.getElementById('root')
 )

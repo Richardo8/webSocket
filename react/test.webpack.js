@@ -22024,7 +22024,7 @@ var Hello = function (_React$Component) {
     return Hello;
 }(_react2.default.Component);
 
-_reactDom2.default.render(_react2.default.createElement(Hello, null), document.querySelector('#root'));
+_reactDom2.default.render(_react2.default.createElement(Hello, null), document.getElementById('root'));
 
 /***/ })
 /******/ ]);
