@@ -6,4 +6,18 @@ $(function () {
     $('#send').click(function () {
         ws.send($('#message').val())
     })
+
+
+    function a() {
+        return 1;
+    }
+
+    async function b() {
+        let b = await a();
+        console.log(b);
+    }
+
+    b();
+
+
 })
