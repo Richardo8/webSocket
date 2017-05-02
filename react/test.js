@@ -1,15 +1,15 @@
-import React from 'react'
+import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 
-class Hello extends React.Component{
-    render(){
-        return (
-            <div>
-                hello
-            </div>
-        )
-    }
-}
+// class Hello extends React.Component{
+//     render(){
+//         return (
+//             <div>
+//                 hello
+//             </div>
+//         )
+//     }
+// }
 
 /*
 * 将被废弃掉*/
@@ -31,8 +31,38 @@ class Hello extends React.Component{
 //     }
 // })
 
+/*
+* ES56 CLASS*/
+// class Button extends Component{
+//     constructor(props){
+//         super(props);
+//     };
+//
+//     static defaultProps = {
+//         color: 'blue',
+//         text: 'confirm',
+//     };
+//
+//     render(){
+//         const{ color, text } = this.props;
+//         return (
+//             <button className={`btn btn-${color}`}>
+//                 <em>{text}</em>
+//             </button>
+//         )
+//     }
+// }
+
+/*无状态函数*/
+function Button({ color = 'blue', text = 'Confirm'}) {
+    return (
+        <button className={`btn btn-${color}`}>
+            <em>{text}</em>
+        </button>
+    )
+}
+
 ReactDOM.render(
-    <Hello />,
     <Button />,
     document.getElementById('root')
 )
