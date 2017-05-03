@@ -1,8 +1,8 @@
 module.exports = {
-    entry: "./react/test.js",
+    entry: "./react/tabs.js",
     output: {
         path: __dirname + "/react",
-        filename: "test.webpack.js"
+        filename: "tabs.webpack.js"
     },
     watch: true,
     module: {
